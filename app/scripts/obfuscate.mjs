@@ -22,7 +22,10 @@ function listJs(dir) {
 }
 
 const files = listJs(distDir).filter(
-  (f) => !/workbox-.*\.js$/.test(f) && !f.endsWith("/sw.js"),
+  (f) =>
+    !/workbox-.*\.js$/.test(f) &&
+    !f.endsWith("/sw.js") &&
+    !f.endsWith("/registerSW.js"),
 );
 
 if (files.length === 0) {
