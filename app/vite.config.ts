@@ -5,6 +5,8 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vite.dev/config/
 export default defineConfig({
+  // 相对 base：部署到 GitHub Pages 子路径（https://<user>.github.io/clues-follow/）时资源路径正确
+  base: "./",
   plugins: [
     react(),
     tailwindcss(),
