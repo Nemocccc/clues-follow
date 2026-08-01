@@ -1,0 +1,15 @@
+# 依赖与构建产物
+node_modules/
+dist/
+test-results/
+playwright-report/
+
+# 旧版单文件 demo（保留在本地供参考，不纳入版本管理）
+legacy-demo/
+
+# 截图存档（交付物，不进仓库）
+screenshots/
+
+# 系统与编辑器
+.DS_Store
+*.log
